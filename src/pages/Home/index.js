@@ -5,7 +5,7 @@ import Logo from '../../components/Logo';
 import { getCatalog } from '../../services/catalog';
 
 const Home = () => {
-  const [catalog, setCatalog] = useState([]);
+  const [setCatalog] = useState([]);
 
   useEffect(() => {
     getCatalog().then((resp) => setCatalog(resp.data));
