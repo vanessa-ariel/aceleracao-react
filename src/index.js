@@ -4,6 +4,7 @@ import './index.scss';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import * as ServiceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,3 +14,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+ServiceWorker.register();
